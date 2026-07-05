@@ -1,0 +1,73 @@
+/* ظهور العناصر تدريجياً عند التمرير */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* حركة الخلفية التقنية الفلويد */
+.tech-globe {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 65%);
+    filter: blur(90px);
+    opacity: 0.12;
+    position: absolute;
+    animation: pulseGlobe 10s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlobe {
+    0% { transform: scale(1) translate(0, 0); opacity: 0.1; }
+    100% { transform: scale(1.15) translate(30px, -20px); opacity: 0.18; }
+}
+
+/* شاشة التحميل الافتتاحية (Splash Screen) */
+#splash-screen {
+    position: fixed;
+    inset: 0;
+    background: #0a0a0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.splash-logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.splash-logo span { color: var(--accent); }
+
+.splash-loader {
+    width: 160px;
+    height: 2px;
+    background: rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.splash-loader::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; height: 100%;
+    width: 40%;
+    background: var(--accent);
+    animation: loadingBar 1.6s infinite ease-in-out;
+}
+
+@keyframes loadingBar {
+    0% { left: -40%; }
+    100% { left: 100%; }
+}
