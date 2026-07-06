@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F Studio | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* كود أمان لضمان ظهور التصميم حتى لو لم تتحمل ملفات الـ CSS الخارجية */
+        body { background-color: #0c0c0e; color: #ffffff; font-family: 'Arial', sans-serif; margin: 0; padding: 2rem; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .project-card { background: #121216; border: 1px solid #1a1a22; border-radius: 12px; padding: 1.5rem; transition: 0.3s; }
+        .project-card:hover { border-color: #00ffa3; }
+        .project-title { color: #00ffa3; margin-top: 0; }
+        .project-desc { color: #8e8e9a; font-size: 0.9rem; line-height: 1.5; }
+        .btn { display: inline-block; background: #00ffa3; color: #0c0c0e; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1rem; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>F Studio Showcase</h1>
+        <p>Engineered Solutions & Future-Modern Designs</p>
+        <a href="index.html" style="color: #00ffa3; text-decoration: none;">&larr; Back to Home</a>
+    </header>
+
+    <div class="portfolio-grid">
+        
+        <div class="project-card">
+            <h3 class="project-title">F-Commerce Platform</h3>
+            <p class="project-desc">A fully responsive, high-performance e-commerce ecosystem built natively with vanilla JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">AeroData: Flight Analytics Pipeline</h3>
+            <p class="project-desc">A Python data pipeline analyzing 50 dynamic flight records. Successfully computed metrics: Average Delay of 62.98 mins, and captured Peak Delay at 118 mins (Flight F-134).</p>
+            <a href="https://github.com/fmohammedali/f-studio0" class="btn">View Pipeline Code</a>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">AI-Powered Automation Engine</h3>
+            <p class="project-desc">Deploying custom cognitive AI models and LLM wrappers to automate enterprise customer support operations.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-title">Tech-Start Visual Identity</h3>
+            <p class="project-desc">A futuristic and minimal brand identity design engineered specifically for next-gen telecommunications startups.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
