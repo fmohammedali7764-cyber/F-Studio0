@@ -8,14 +8,15 @@ const projects = [
         image: "assets/images/project1.jpg", 
         link: "#"
     },
-    {
+        {
         id: 2,
-        title: "تحليل بيانات مبيعات متكاملة",
+        title: "AeroData: Flight Analytics Pipeline",
         category: "data",
-        desc: "لوحة مؤشرات تفاعلية لاستخراج الإحصائيات وحساب المعدلات باستخدام لغة Python.",
+        desc: "A Python data pipeline analyzing 50 dynamic flight records. Successfully computed metrics: Average Delay of 62.98 mins, and captured Peak Delay at 118 mins (Flight F-134).",
         image: "assets/images/project2.jpg",
-        link: "#"
+        link: "https://github.com/fmohammedali/f-studio0" // رابط مستودعك الحالي
     },
+    
     {
         id: 3,
         title: "نظام أتمتة الردود الذكي",
