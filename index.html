@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F Studio | الاستوديو الرقمي</title>
+    <title>F Studio | الاستوديو الرقمي الاحترافي</title>
+    <meta name="description" content="F Studio - تصميم شعارات، تطوير مواقع، تحليل بيانات وحلول الذكاء الاصطناعي">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -21,12 +22,16 @@
         <div class="container navbar-container">
             <a href="index.html" class="logo">F<span>Studio</span></a>
             <nav class="nav-menu">
-                <a href="index.html" class="active">الرئيسية</a>
-                <a href="portfolio.html">معرض الأعمال</a>
-                <a href="contact.html">تواصل معنا</a>
+                <a href="index.html" class="active" data-i18n="home">الرئيسية</a>
+                <a href="about.html" data-i18n="about">من أنا</a>
+                <a href="services.html" data-i18n="services">الخدمات</a>
+                <a href="portfolio.html" data-i18n="portfolio">معرض الأعمال</a>
+                <a href="blog.html" data-i18n="blog">المدونة</a>
+                <a href="contact.html" data-i18n="contact">تواصل معنا</a>
             </nav>
             <div class="nav-actions">
                 <button id="theme-toggle" aria-label="Toggle Theme">🌓</button>
+                <button id="lang-toggle">EN</button>
             </div>
         </div>
     </header>
@@ -35,33 +40,34 @@
     <section class="hero-section">
         <div class="container hero-grid">
             <div class="hero-content reveal">
-                <h1>نبتكر الحلول الرقمية <br><span>للمستقبل</span></h1>
-                <p>استوديو متكامل يجمع بين الفن الهندسي وتحليل البيانات المتقدم لبناء تجارب رقمية فريدة.</p>
+                <h1 data-i18n="hero-title">نبتكر الحلول الرقمية <br><span>للمستقبل</span></h1>
+                <p data-i18n="hero-desc">استوديو متكامل يجمع بين الفن الهندسي وتحليل البيانات المتقدم لبناء تجارب رقمية فريدة.</p>
                 <div class="hero-buttons">
-                    <a href="portfolio.html" class="btn btn-primary">عرض أعمالي</a>
-                    <a href="contact.html" class="btn btn-secondary">لنبدأ المشروع</a>
+                    <a href="portfolio.html" class="btn btn-primary" data-i18n="view-work">عرض أعمالي</a>
+                    <a href="contact.html" class="btn btn-secondary" data-i18n="let-talk">لنبدأ المشروع</a>
                 </div>
             </div>
             <div class="hero-visual reveal">
+                <!-- تصميم تقني تفاعلي عبر CSS -->
                 <div class="tech-globe"></div>
             </div>
         </div>
     </section>
 
-    <!-- قسم الإحصائيات المتحرك -->
+    <!-- قسم الإحصائيات المتحرك (Stats Section) -->
     <section class="stats-section container">
         <div class="stats-grid">
             <div class="stat-item">
                 <h3 class="counter" data-target="20">0</h3>
-                <p>مشروع مكتمل</p>
+                <p data-i18n="stat-projects">مشروع مكتمل</p>
             </div>
             <div class="stat-item">
                 <h3 class="counter" data-target="99">0</h3>
-                <p>رضا العملاء %</p>
+                <p data-i18n="stat-satisfaction">رضا العملاء %</p>
             </div>
             <div class="stat-item">
                 <h3 class="counter" data-target="5">0</h3>
-                <p>سنوات الخبرة</p>
+                <p data-i18n="stat-experience">سنوات الخبرة</p>
             </div>
         </div>
     </section>
@@ -69,29 +75,29 @@
     <!-- قسم الخدمات (Services Section) -->
     <section class="services-section container">
         <div class="section-header reveal">
-            <h2>الخدمات الاحترافية</h2>
-            <p>ما يمكن لـ F Studio تقديمه لأعمالك</p>
+            <h2 data-i18n="services-title">الخدمات الاحترافية</h2>
+            <p data-i18n="services-subtitle">ما يمكن لـ F Studio تقديمه لأعمالك</p>
         </div>
         <div class="services-grid">
             <div class="service-card reveal">
                 <div class="icon">🎨</div>
-                <h3>تصميم الشعارات الهوية</h3>
-                <p>بناء هويات بصرية فريدة بنمط Modern + Tech.</p>
+                <h3 data-i18n="srv-design">تصميم الشعارات الهوية</h3>
+                <p data-i18n="srv-design-desc">بناء هويات بصرية فريدة بنمط Modern + Tech.</p>
             </div>
             <div class="service-card reveal">
                 <div class="icon">💻</div>
-                <h3>تتطوير مواقع الويب</h3>
-                <p>موقعك سريع، متوافق مع الهواتف، ومخصص بدقة عالية.</p>
+                <h3 data-i18n="srv-dev">تطوير مواقع الويب</h3>
+                <p data-i18n="srv-dev-desc">مواقع سريعة، متوافقة بالكامل، ومخصصة بدقة.</p>
             </div>
             <div class="service-card reveal">
                 <div class="icon">📊</div>
-                <h3>تحليل البيانات</h3>
-                <p>استخراج الرؤى الذكية باستخدام Python و SQL و Excel.</p>
+                <h3 data-i18n="srv-data">تحليل البيانات</h3>
+                <p data-i18n="srv-data-desc">استخراج الرؤى الذكية باستخدام Python و SQL و Excel.</p>
             </div>
             <div class="service-card reveal">
                 <div class="icon">🤖</div>
-                <h3>حلول الذكاء الاصطناعي</h3>
-                <p>دمج أدوات التوليد الذكي وأتمتة العمليات البرمجية.</p>
+                <h3 data-i18n="srv-ai">حلول الذكاء الاصطناعي</h3>
+                <p data-i18n="srv-ai-desc">دمج أدوات التوليد الذكي وأتمتة العمليات البرمجية.</p>
             </div>
         </div>
     </section>
